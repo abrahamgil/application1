@@ -1,7 +1,10 @@
 import json
 
 data = json.load(open("files/data.json"))
-print(data["rain"])
 
-lookup = input("Enter the word you are looking for: ")
-print(data[lookup])
+def lookup(word):
+    return data[word]
+
+word = input("Enter the word you are looking for: ")
+
+print(lookup(word))

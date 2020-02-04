@@ -3,6 +3,7 @@ import json
 data = json.load(open("files/data.json"))
 
 def lookup(w):
+    w = w.lower()
     if w in data:
         return data[w]
     else:
